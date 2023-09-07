@@ -14,5 +14,5 @@ steps:
   displayName: "Testing Azure DevOps App"
 
 - script: |
-    mvn clean verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io/ -Dsonar.organization=dondoncorre22 -Dsonar.projectKey=dondoncorre22_dondoncorre22 
+    mvn clean verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io/ -Dsonar.organization=dondoncorre22 -Dsonar.projectKey=dondoncorre22_dondoncorre22 -Dsonar.token=c09818093d354bef71fdbb3b3a94a3815bc02fbb
   displayName: "Integrate SAST using SonarCloud in Azure DevOps DevSecOps Pipeline"
