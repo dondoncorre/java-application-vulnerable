@@ -4,8 +4,6 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-
-
 steps:
 - script: |
     mvn clean package
@@ -14,3 +12,7 @@ steps:
 - script: |
     mvn clean test
   displayName: "Testing Azure DevOps App"
+
+- script: |
+    mvn clean verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io/ -Dsonar.organization=dondoncorre22 -Dsonar.projectKey=dondoncorre22_dondoncorre22 
+  displayName: "Integrate SAST using SonarCloud in Azure DevOps DevSecOps Pipeline"
