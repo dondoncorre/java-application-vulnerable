@@ -7,7 +7,7 @@ pool:
 steps:
 - script: |
     mvn clean package
-  displayName: "Building Azure DevOps App"
+  displayName: "Building Don's DevOps App"
 
 - script: |
     mvn clean test
