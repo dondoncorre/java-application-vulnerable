@@ -14,11 +14,6 @@ steps:
     echo "This is a demo YAML file for DevSecOps Pipeline"
   displayName: "Print Console Text for Demo"
 
-steps:
-- script: |
-    mvn clean package
-  displayName: "Building Don's DevOps App"
-
 - script: |
     mvn clean test
   displayName: "Testing Don's DevOps App"
